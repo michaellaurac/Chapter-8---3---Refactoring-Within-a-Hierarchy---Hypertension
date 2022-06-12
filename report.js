@@ -10,7 +10,7 @@ class Report {
 
 class GenericReport extends Report {
   printReport (params) {
-    return super.printReport(Object.assign(this.params, params));
+    return Object.assign(this.params, params);
   };
 };
 
