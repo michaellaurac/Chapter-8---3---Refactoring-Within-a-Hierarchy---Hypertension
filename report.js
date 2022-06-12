@@ -19,28 +19,6 @@ class GenericReport extends Report {
   };
 };
 
-class ClientReport extends GenericReport {
-  constructor (params) {
-    super(params);
-    this.params = params;
-  };
-
-  printReport (params) {
-    return super.printReport(Object.assign(this.params, params));
-  };
-};
-
-class SpecificClientReport extends ClientReport {
-  constructor (params) {
-    super(params);
-    this.params = params;
-  };
-
-  printReport (params) {
-    return super.printReport(Object.assign(this.params, params));
-  };
-};
-
 /* eslint-env mocha */
 
 const wish = require("wish");
