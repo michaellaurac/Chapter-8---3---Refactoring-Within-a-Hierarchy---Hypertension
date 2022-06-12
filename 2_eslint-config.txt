@@ -1,0 +1,20 @@
+ESLINT CONFIGURATION
+npm init @eslint/config
+> To check syntax, find problemsn and enforce code style
+> CommonJS (require/exports)
+> None of these
+> No
+> Browser and Node <a>
+> Use a popular style guide
+> Standard: https://github.com/standard/standard
+> JSON
+> Yes
+> npm
+
+ESLINT RULES
+"rules": {
+  "semi": ["error", "always"],
+  "quotes": ["error", "double", { "allowTemplateLiterals": true }],
+  "array-element-newline":["error", {"minItems": 4}]
+}
+
