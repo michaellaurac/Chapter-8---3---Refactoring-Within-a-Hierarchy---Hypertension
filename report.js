@@ -9,11 +9,6 @@ class Report {
 }
 
 class GenericReport extends Report {
-  constructor (params) {
-    super(params);
-    this.params = params;
-  };
-
   printReport (params) {
     return super.printReport(Object.assign(this.params, params));
   };
