@@ -1,14 +1,8 @@
-class Report {
+class GenericReport {
   constructor (params) {
     this.params = params;
   };
 
-  printReport (params) {
-    return params;
-  };
-}
-
-class GenericReport extends Report {
   printReport (params) {
     return Object.assign(this.params, params);
   };
